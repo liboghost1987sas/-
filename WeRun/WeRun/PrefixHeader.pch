@@ -1,0 +1,25 @@
+//
+//  PrefixHeader.pch
+//  WeRun
+//
+//  Created by 梦想起飞 on 16/2/25.
+//  Copyright © 2016年 梦想起飞. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
+//xmpp工具类需要的相关 宏
+#define WRXMPPDOMAIN @"tarena.com"/*域名*/
+#define WRXMPPHOSTNAME @"127.0.0.1"/*IP地址*/
+#define WRXMPPPORT 5222 /*端口号*/
+
+#ifndef DEBUG
+//...在这里意思是变长参数
+#define MYLog(...) NSLog(__VA_ARGS__)
+#else
+#define MYLog(...)
+#endif
+
+
+#endif /* PrefixHeader_pch */
